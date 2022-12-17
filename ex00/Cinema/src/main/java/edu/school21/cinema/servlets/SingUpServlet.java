@@ -1,6 +1,5 @@
 package edu.school21.cinema.servlets;
 
-import edu.school21.cinema.models.User;
 import edu.school21.cinema.services.UsersService;
 import org.springframework.context.ApplicationContext;
 
@@ -14,8 +13,8 @@ import java.io.InputStreamReader;
 import java.util.stream.Collectors;
 
 @MultipartConfig
-@WebServlet(name = "SignInServlet", value = "/signIn")
-public class SignInServlet extends HttpServlet {
+@WebServlet(name = "SingUpServlet", value = "/signUp")
+public class SingUpServlet extends HttpServlet {
     private ApplicationContext applicationContext;
 
     @Override
@@ -25,33 +24,26 @@ public class SignInServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/jsp/signIn.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/jsp/signUp.jsp").forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String firstName = getStringFromPartName(request, "firstname");
+        String secondName = getStringFromPartName(request, "secondname");
         String email = getStringFromPartName(request, "email");
         String password = getStringFromPartName(request, "password");
 
-        if (isNotValidArgs(email, password)) {
-            response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Не правильно указаны данные. Пример: Email: andreysidorov228@mail.ru, Password: andrey123");
+        if (isNotValidArgs(firstName, secondName, email, password)) {
+            response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Не правильно указаны данные. Пример: Имя: Андрей, Фамилия: Сидоров, Email: andreysidorov228@mail.ru, Password: andrey123");
             return;
         }
 
         UsersService usersService = (UsersService) applicationContext.getBean("usersService");
 
-        User user = usersService.signIn(email, password);
+        usersService.signUp(firstName, secondName, email, password);
 
-        if (user == null) {
-            doGet(request, response);
-            return;
-        }
-
-        response.getWriter().write("<meta charset=\"UTF-8\">");
-        response.getWriter().write("Вы успешно авторизовались!<br>");
-        response.getWriter().write(user.getFirstName() + "<br>");
-        response.getWriter().write(user.getSecondName() + "<br>");
-        response.getWriter().write(user.getEmail() + "<br>");
+        response.sendRedirect("/signIn");
     }
 
     private String getStringFromPartName(HttpServletRequest request, String partName) {
@@ -68,8 +60,8 @@ public class SignInServlet extends HttpServlet {
                 .lines().collect(Collectors.joining("\n"));
     }
 
-    private boolean isNotValidArgs(String email, String password) {
-        return (email == null || password == null
-                || email.isEmpty() || password.isEmpty());
+    private boolean isNotValidArgs(String firstNane, String secondName, String email, String password) {
+        return (firstNane == null || secondName == null || email == null || password == null
+                || firstNane.isEmpty() || secondName.isEmpty() || email.isEmpty() || password.isEmpty());
     }
 }

@@ -24,7 +24,7 @@ public class UsersRepository implements CrudRepository<User> {
     }
 
     public User findByEmail(String email) {
-        String query = "SELECT * FROM cinema.users WHERE email=" + email;
+        String query = "SELECT * FROM cinema.users WHERE email='" + email + "'";
         return jdbcTemplate.query(query, new BeanPropertyRowMapper<>(User.class))
                 .stream().findAny().orElse(null);
     }

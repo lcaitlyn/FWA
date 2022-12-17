@@ -20,7 +20,7 @@ public class Config {
     private String username;
     @Value("${db.password}")
     private String password;
-    @Value("${db.driver}")
+    @Value("${db.driver.name}")
     private String driver;
 
     @Bean
@@ -30,6 +30,7 @@ public class Config {
         hikariDataSource.setJdbcUrl(url);
         hikariDataSource.setUsername(username);
         hikariDataSource.setPassword(password);
+        hikariDataSource.setDriverClassName(driver);
 
         return hikariDataSource;
     }

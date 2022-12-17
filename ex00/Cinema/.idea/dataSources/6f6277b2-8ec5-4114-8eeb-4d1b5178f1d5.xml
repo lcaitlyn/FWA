@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.43">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <IntrospectionStateNumber>1404</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1411</IntrospectionStateNumber>
       <ServerVersion>14.5</ServerVersion>
       <StartupTime>1671095964</StartupTime>
       <TimeZones>true ACDT
@@ -801,7 +801,7 @@ false Zulu
 13299||10|C|G
 13299||-9223372036854775808|U|G
 13299||10|U|G</Grants>
-      <IntrospectionStateNumber>1404</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1411</IntrospectionStateNumber>
       <ObjectId>13665</ObjectId>
       <Relations>sequence|table|25164|25165|1
 sequence|table|25173|25174|1
@@ -809,7 +809,7 @@ sequence|table|33399|33400|1
 sequence|table|33431|33432|1
 sequence|table|33440|33441|1
 sequence|table|33475|33476|1
-sequence|table|33502|33503|1
+sequence|table|33511|33512|1
 </Relations>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4225,25 +4225,25 @@ sequence|table|33502|33503|1
       <ValidatorSchema>pg_catalog</ValidatorSchema>
     </language>
     <schema id="260" parent="2" name="chat">
-      <IntrospectionStateNumber>1397</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1411</IntrospectionStateNumber>
       <ObjectId>25163</ObjectId>
       <StateNumber>1215</StateNumber>
       <OwnerName>postgres</OwnerName>
     </schema>
     <schema id="261" parent="2" name="cinema">
-      <IntrospectionStateNumber>1397</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1411</IntrospectionStateNumber>
       <ObjectId>33492</ObjectId>
       <StateNumber>1389</StateNumber>
       <OwnerName>postgres</OwnerName>
     </schema>
     <schema id="262" parent="2" name="company">
-      <IntrospectionStateNumber>1397</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1411</IntrospectionStateNumber>
       <ObjectId>33430</ObjectId>
       <StateNumber>1332</StateNumber>
       <OwnerName>postgres</OwnerName>
     </schema>
     <schema id="263" parent="2" name="currencyexchanger">
-      <IntrospectionStateNumber>1397</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1411</IntrospectionStateNumber>
       <ObjectId>33297</ObjectId>
       <StateNumber>1226</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -4745,7 +4745,7 @@ sequence|table|33502|33503|1
 13647||10|t|G
 13647||10|D|G
 13647||10|w|G</Grants>
-      <IntrospectionStateNumber>1397</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1411</IntrospectionStateNumber>
       <ObjectId>13299</ObjectId>
       <StateNumber>532</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -5876,7 +5876,7 @@ sequence|table|33502|33503|1
 16388||10|X|G
 16389||10|X|G
 16393||10|X|G</Grants>
-      <IntrospectionStateNumber>1397</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1411</IntrospectionStateNumber>
       <ObjectId>11</ObjectId>
       <StateNumber>525</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -5884,7 +5884,7 @@ sequence|table|33502|33503|1
     <schema id="266" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>1404</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1411</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>526</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -5915,13 +5915,13 @@ sequence|table|33502|33503|1
     </table>
     <sequence id="271" parent="261" name="users_id_seq">
       <DataType>integer|0s</DataType>
-      <ObjectId>33502</ObjectId>
-      <StateNumber>1396</StateNumber>
+      <ObjectId>33511</ObjectId>
+      <StateNumber>1410</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <table id="272" parent="261" name="users">
-      <ObjectId>33503</ObjectId>
-      <StateNumber>1396</StateNumber>
+      <ObjectId>33512</ObjectId>
+      <StateNumber>1410</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
@@ -73211,51 +73211,51 @@ sequence|table|33502|33503|1
       <DefaultExpression>nextval(&apos;cinema.users_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>1396</StateNumber>
+      <StateNumber>1410</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="5603" parent="272" name="firstname">
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>1396</StateNumber>
+      <StateNumber>1410</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="5604" parent="272" name="secondname">
       <DataType>varchar(256)|0s</DataType>
       <Position>3</Position>
-      <StateNumber>1396</StateNumber>
+      <StateNumber>1410</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="5605" parent="272" name="password">
+    <column id="5605" parent="272" name="email">
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>1396</StateNumber>
+      <StateNumber>1410</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="5606" parent="272" name="email">
+    <column id="5606" parent="272" name="password">
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
-      <StateNumber>1396</StateNumber>
+      <StateNumber>1410</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <index id="5607" parent="272" name="users_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>33509</ObjectId>
+      <ObjectId>33518</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1396</StateNumber>
+      <StateNumber>1410</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
     <key id="5608" parent="272" name="users_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>33510</ObjectId>
+      <ObjectId>33519</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1396</StateNumber>
-      <UnderlyingIndexId>33509</UnderlyingIndexId>
+      <StateNumber>1410</StateNumber>
+      <UnderlyingIndexId>33518</UnderlyingIndexId>
     </key>
     <column id="5609" parent="275" name="id">
       <DataType>integer|0s</DataType>
