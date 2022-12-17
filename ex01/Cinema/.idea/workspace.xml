@@ -10,7 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61e16daf-0d38-4ced-a3b9-f8a05cc073f0" name="Changes" comment="Доделал ex00">
+      <change beforePath="$PROJECT_DIR$/../../ex00/Cinema/src/main/java/edu/school21/cinema/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex00/Cinema/src/main/java/edu/school21/cinema/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ex00/Cinema/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ex00/Cinema/src/main/webapp/WEB-INF/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex00/Cinema/src/main/webapp/WEB-INF/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/IndexServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,25 +52,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pc/Desktop/CurrencyExchanger&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;2d365e421520ea39d539527b81cd069e&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/pc/Desktop/FWA/ex01/Cinema",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "spring.configuration.checksum": "2d365e421520ea39d539527b81cd069e"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pc\Desktop\FWA\ex00\Cinema\src\main" />
@@ -191,6 +197,8 @@
       <workItem from="1671273208817" duration="3379000" />
       <workItem from="1671280982926" duration="3154000" />
       <workItem from="1671289240450" duration="307000" />
+      <workItem from="1671289567170" duration="2648000" />
+      <workItem from="1671300656333" duration="91000" />
     </task>
     <task id="LOCAL-00001" summary="Начал разработку.">
       <created>1671218976005</created>
@@ -238,11 +246,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/IndexServlet.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/edu/school21/cinema/repositories/UsersRepository.java</url>
           <line>40</line>

@@ -12,7 +12,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Configuration
 @ComponentScan("edu.school21.cinema")
-@PropertySource("classpath:db.properties")
+@PropertySource("classpath:../application.properties")
 public class Config {
     @Value("${db.url}")
     private String url;
