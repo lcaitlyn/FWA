@@ -10,13 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61e16daf-0d38-4ced-a3b9-f8a05cc073f0" name="Changes" comment="Доделал ex00">
-      <change beforePath="$PROJECT_DIR$/../../ex00/Cinema/src/main/java/edu/school21/cinema/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex00/Cinema/src/main/java/edu/school21/cinema/config/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ex00/Cinema/src/main/resources/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ex00/Cinema/src/main/webapp/WEB-INF/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex00/Cinema/src/main/webapp/WEB-INF/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/chat.WJMuAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/chat.WJMuAA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/cinema.8fLqrg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/cinema.8fLqrg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/company.fTynOA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/currencyexchanger.vsmasQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/currencyexchanger.vsmasQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/config/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/IndexServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/filters/EncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/filters/EncodingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/repositories/CrudRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/repositories/CrudRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/repositories/UsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/repositories/UsersRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/services/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/services/UsersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/services/UsersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/services/UsersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/SignInServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/SignInServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +71,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/pc/Desktop/FWA/ex01/Cinema",
+    "last_opened_file_path": "/Users/lcaitlyn/Desktop/FWA/ex01/Cinema",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -81,103 +94,8 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.83">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.school21.cinema.Program" />
-      <module name="Cinema" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tomcat 8.5.83" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.83" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/signUp" />
-      <option name="UPDATING_POLICY" value="hot-swap-classes" />
-      <deployment>
-        <artifact name="Cinema:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="fc0c4906-6b59-458c-aea1-0b9e6004e48e" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51500" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Cinema:war" />
-        </option>
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.Program" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.83" />
     </list>
   </component>
@@ -199,6 +117,7 @@
       <workItem from="1671289240450" duration="307000" />
       <workItem from="1671289567170" duration="2648000" />
       <workItem from="1671300656333" duration="91000" />
+      <workItem from="1671351399733" duration="1892000" />
     </task>
     <task id="LOCAL-00001" summary="Начал разработку.">
       <created>1671218976005</created>
@@ -248,13 +167,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/edu/school21/cinema/repositories/UsersRepository.java</url>
-          <line>40</line>
+          <line>41</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/school21/cinema/filters/EncodingFilter.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

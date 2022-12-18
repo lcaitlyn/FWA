@@ -5,6 +5,8 @@ import edu.school21.cinema.repositories.UsersRepository;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
+import java.util.Optional;
+
 @Component
 public class UsersServiceImpl implements UsersService{
     private final UsersRepository usersRepository;
@@ -23,12 +25,14 @@ public class UsersServiceImpl implements UsersService{
     }
 
     @Override
-    public User signIn(String email, String password) {
-        User user = usersRepository.findByEmail(email);
+    public boolean signIn(String email, String password) {
+        Optional<User> user = usersRepository.findByEmail(email);
 
-        if (user != null && passwordEncoder.matches(password, user.getPassword()))
-            return user;
-//
-        return null;
+        if (user.isPresent()
+                && passwordEncoder.matches(password, user.get().getPassword())) {
+            return true;
+        }
+
+        return false;
     }
 }

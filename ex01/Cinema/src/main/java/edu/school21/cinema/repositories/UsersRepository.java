@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class UsersRepository implements CrudRepository<User> {
@@ -17,16 +18,16 @@ public class UsersRepository implements CrudRepository<User> {
     }
 
     @Override
-    public User findById(Long id) {
+    public Optional<User> findById(Long id) {
         String query = "SELECT * FROM cinema.users WHERE id=" + id;
-        return jdbcTemplate.query(query, new BeanPropertyRowMapper<>(User.class))
-                .stream().findAny().orElse(null);
+        return Optional.ofNullable(jdbcTemplate.query(query, new BeanPropertyRowMapper<>(User.class))
+                .stream().findAny().orElse(null));
     }
 
-    public User findByEmail(String email) {
+    public Optional<User> findByEmail(String email) {
         String query = "SELECT * FROM cinema.users WHERE email='" + email + "'";
-        return jdbcTemplate.query(query, new BeanPropertyRowMapper<>(User.class))
-                .stream().findAny().orElse(null);
+        return Optional.ofNullable(jdbcTemplate.query(query, new BeanPropertyRowMapper<>(User.class))
+                .stream().findAny().orElse(null));
     }
 
     @Override
