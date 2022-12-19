@@ -31,4 +31,14 @@ public class Utils {
 
         return true;
     }
+
+    public static boolean isValidArgs(String firstNane, String secondName, String email, String password) {
+        if (firstNane == null || secondName == null || email == null || password == null)
+            return false;
+
+        if (firstNane.isEmpty() || secondName.isEmpty() || email.isEmpty() || password.isEmpty())
+            return false;
+
+        return true;
+    }
 }

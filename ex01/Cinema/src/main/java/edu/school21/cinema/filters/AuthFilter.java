@@ -2,13 +2,12 @@ package edu.school21.cinema.filters;
 
 import javax.servlet.*;
 import javax.servlet.annotation.*;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebFilter(filterName = "EncodingFilter", value = "/*")
-public class EncodingFilter implements Filter {
+@WebFilter(filterName = "AuthFilter", urlPatterns = {"/signIn", "/signUp"})
+public class AuthFilter implements Filter {
     public void init(FilterConfig config) throws ServletException {
     }
 
@@ -24,9 +23,10 @@ public class EncodingFilter implements Filter {
             req.getSession().setAttribute("authorized", false);
         }
 
-        resp.setContentType("text/xml; charset=UTF-8");
-        req.setCharacterEncoding("UTF-8");
-        resp.setCharacterEncoding("UTF-8");
+        if (req.getSession().getAttribute("authorized").equals(true)) {
+            resp.sendRedirect("/profile");
+            return;
+        }
 
         chain.doFilter(request, response);
     }

@@ -28,11 +28,6 @@ public class UsersServiceImpl implements UsersService{
     public boolean signIn(String email, String password) {
         Optional<User> user = usersRepository.findByEmail(email);
 
-        if (user.isPresent()
-                && passwordEncoder.matches(password, user.get().getPassword())) {
-            return true;
-        }
-
-        return false;
+        return (user.isPresent() && passwordEncoder.matches(password, user.get().getPassword()));
     }
 }

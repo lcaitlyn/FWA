@@ -20,8 +20,4 @@ public class Listener implements ServletContextListener, HttpSessionListener, Ht
         ServletContext servletContext = sce.getServletContext();
         servletContext.setAttribute("applicationContext", applicationContext);
     }
-
-    @Override
-    public void contextDestroyed(ServletContextEvent sce) {
-    }
 }

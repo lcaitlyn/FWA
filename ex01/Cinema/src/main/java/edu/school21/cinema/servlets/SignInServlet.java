@@ -1,6 +1,7 @@
 package edu.school21.cinema.servlets;
 
 import edu.school21.cinema.models.User;
+import edu.school21.cinema.repositories.UsersRepository;
 import edu.school21.cinema.services.UsersService;
 import edu.school21.cinema.utils.Utils;
 import org.springframework.context.ApplicationContext;
@@ -18,10 +19,14 @@ import java.util.stream.Collectors;
 @WebServlet(name = "SignInServlet", value = "/signIn")
 public class SignInServlet extends HttpServlet {
     private ApplicationContext applicationContext;
+    private UsersService usersService;
+    private UsersRepository usersRepository;
 
     @Override
     public void init(ServletConfig config) throws ServletException {
         applicationContext = (ApplicationContext) config.getServletContext().getAttribute("applicationContext");
+        usersService = (UsersService) applicationContext.getBean("usersService");
+        usersRepository = (UsersRepository) applicationContext.getBean("usersRepository");
     }
 
     @Override
@@ -34,19 +39,19 @@ public class SignInServlet extends HttpServlet {
         String email = Utils.getStringFromPartName(request, "email");
         String password = Utils.getStringFromPartName(request, "password");
 
-        if (Utils.isValidArgs(email, password)) {
+        if (!Utils.isValidArgs(email, password)) {
             response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Не правильно указаны данные. Пример: Email: andreysidorov228@mail.ru, Password: andrey123");
             return;
         }
 
-        UsersService usersService = (UsersService) applicationContext.getBean("usersService");
-
-        if (usersService.signIn(email, password)) {
-
+        if (!usersService.signIn(email, password)) {
+            doGet(request, response);
+            return;
         }
 
-        doGet(request, response);
-    }
+        request.getSession().setAttribute("authorized", true);
+        request.getSession().setAttribute("user", usersRepository.findByEmail(email).get());
 
-    private void
+        response.sendRedirect("/profile");
+    }
 }

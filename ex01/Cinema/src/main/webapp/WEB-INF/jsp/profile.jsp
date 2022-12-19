@@ -5,9 +5,12 @@
     <title>Профиль</title>
 </head>
 <body>
-    <%
-        User user = (User) request.getAttribute("user");
-
-    %>
+<h1>Профиль</h1>
+<ul>
+    <% User user = (User) request.getSession().getAttribute("user"); %>
+    <li><%= user.getFirstName()%></li>
+    <li><%= user.getSecondName()%></li>
+    <li><%= user.getEmail()%></li>
+</ul>
 </body>
 </html>
