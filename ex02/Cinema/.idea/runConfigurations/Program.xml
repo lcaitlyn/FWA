@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Program" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="edu.school21.cinema.Program" />
+    <module name="Cinema" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
