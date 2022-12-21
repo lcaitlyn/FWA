@@ -17,8 +17,8 @@
 <body>
 <div class="container">
     <div class="container__photo">
-        <% String logo =
-        <img src="/WEB-INF/logo/avatar.jpeg" alt="noname">
+        <% String logo = "/Users/lcaitlyn/Desktop/FWA/ex02/Cinema/src/main/webapp/WEB-INF/logo/avatar.jpeg"; %>
+        <img src="<%=logo%>>" alt="noname">
         <!--  here style bootstrap class - @btn@-->
         <form method="POST">
             <input  class="form-control form-control-sm" type="file" name="" id="" pa>
