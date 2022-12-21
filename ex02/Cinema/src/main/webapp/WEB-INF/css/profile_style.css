@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 800px;
+    margin: 200px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.container__photo {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin-right: 20px;
+}
+
+.container__photo img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.container form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container__photo button {
+    margin: 10px auto;
+    padding: 5px 30px;
+}
+
+.container__right-side {
+    flex-grow: 1;
+}
+
+.container > .table-bordered{
+    border-radius: 20px;
+}
+
+.table {
+    margin-top: 30px;
+}

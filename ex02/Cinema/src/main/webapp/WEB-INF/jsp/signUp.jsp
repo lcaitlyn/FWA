@@ -53,23 +53,23 @@
         -webkit-overflow-scrolling: touch;
     }
 
-    <%@include file="/WEB-INF/css/style.css"%>
+    <%@include file="/WEB-INF/css/sign_style.css"%>
 </style>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-    <title>Регистрация</title>
+    <title>Registration</title>
 </head>
 <body class="text-center">
 <main class="form-signin w-100 m-auto">
     <form enctype="multipart/form-data" method="post">
         <h1 class="h3 mb-3 fw-normal">Sign Up</h1>
         <div class="form-floating">
-            <input name="firstname" type="text" class="form-control" id="floatingInput" placeholder="Andrey">
+            <input name="firstname" type="text" class="form-control" id="inputFirstName" placeholder="Andrey">
             <label for="floatingInput">First Name</label>
         </div>
         <div class="form-floating">
-            <input name="secondname" type="text" class="form-control" id="floatingInput" placeholder="Sidorov">
+            <input name="secondname" type="text" class="form-control" id="inputSecondName" placeholder="Sidorov">
             <label for="floatingInput">Second Name</label>
         </div>
         <div class="form-floating">

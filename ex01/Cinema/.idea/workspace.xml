@@ -9,16 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61e16daf-0d38-4ced-a3b9-f8a05cc073f0" name="Changes" comment="Доделал ex01">
+    <list default="true" id="61e16daf-0d38-4ced-a3b9-f8a05cc073f0" name="Changes" comment="Refactor code. Изменяю на Optional&lt;User&gt;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ex02/Cinema/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex02/Cinema/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ex02/Cinema/.idea/artifacts/Cinema_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex02/Cinema/.idea/artifacts/Cinema_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ex02/Cinema/.idea/artifacts/Cinema_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex02/Cinema/.idea/artifacts/Cinema_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ex02/Cinema/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex02/Cinema/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ex02/Cinema/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex02/Cinema/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ex02/Cinema/src/main/resources/sql/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex02/Cinema/src/main/resources/sql/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ex02/Cinema/src/main/webapp/WEB-INF/application.propreties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ex02/Cinema/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex02/Cinema/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,25 +46,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/pc/Desktop/FWA/ex02/Cinema",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "spring.configuration.checksum": "2d365e421520ea39d539527b81cd069e"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/lcaitlyn/Desktop/FWA/ex01/Cinema&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;2d365e421520ea39d539527b81cd069e&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pc\Desktop\FWA\ex00\Cinema\src\main" />
@@ -83,104 +75,18 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.83">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.school21.cinema.Program" />
-      <module name="Cinema" />
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
       <method v="2">
         <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tomcat 8.5.83" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.83" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/signUp" />
-      <option name="UPDATING_POLICY" value="hot-swap-classes" />
-      <deployment>
-        <artifact name="Cinema:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="fc0c4906-6b59-458c-aea1-0b9e6004e48e" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51500" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Cinema:war" />
-        </option>
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Program" />
-      <item itemvalue="Application.Unnamed" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.83" />
     </list>
   </component>
@@ -202,8 +108,8 @@
       <workItem from="1671289240450" duration="307000" />
       <workItem from="1671289567170" duration="2648000" />
       <workItem from="1671300656333" duration="91000" />
-      <workItem from="1671448576939" duration="8304000" />
-      <workItem from="1671465050740" duration="10000" />
+      <workItem from="1671351399733" duration="2202000" />
+      <workItem from="1671627562471" duration="144000" />
     </task>
     <task id="LOCAL-00001" summary="Начал разработку.">
       <created>1671218976005</created>
@@ -226,14 +132,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671283659041</updated>
     </task>
-    <task id="LOCAL-00004" summary="Доделал ex01">
-      <created>1671464825993</created>
+    <task id="LOCAL-00004" summary="Refactor code. Изменяю на Optional&lt;User&gt;">
+      <created>1671362883419</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1671464825993</updated>
+      <updated>1671362883419</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Refactor code. Изменяю на Optional&lt;User&gt;">
+      <created>1671362894445</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671362894445</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,21 +166,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Начал разработку." />
     <MESSAGE value="Доделал ex00" />
-    <MESSAGE value="Доделал ex01" />
-    <option name="LAST_COMMIT_MESSAGE" value="Доделал ex01" />
+    <MESSAGE value="Refactor code. Изменяю на Optional&lt;User&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor code. Изменяю на Optional&lt;User&gt;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/school21/cinema/filters/AuthFilter.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/school21/cinema/filters/EncodingFilter.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/src/main/java/edu/school21/cinema/repositories/UsersRepository.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

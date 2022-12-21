@@ -53,12 +53,12 @@
         -webkit-overflow-scrolling: touch;
     }
 
-    <%@include file="/WEB-INF/css/style.css"%>
+    <%@include file="/WEB-INF/css/sign_style.css"%>
 </style>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-    <title>Авторизация</title>
+    <title>Login</title>
 </head>
 <body class="text-center">
 <main class="form-signin w-100 m-auto">
