@@ -10,25 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61e16daf-0d38-4ced-a3b9-f8a05cc073f0" name="Changes" comment="Делаю ex02">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Cinema_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Cinema_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/lcaitlyn.7O-L8w/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/lcaitlyn.7O-L8w/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/lcaitlyn.7O-L8w/schema/information_schema.FNRwLQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/lcaitlyn.7O-L8w/schema/information_schema.FNRwLQ.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/lcaitlyn.7O-L8w/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/lcaitlyn.7O-L8w/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/lcaitlyn.7O-L8w/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/lcaitlyn.7O-L8w/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/lcaitlyn.7O-L8w/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/lcaitlyn.7O-L8w/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/chat.WJMuAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/chat.WJMuAA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/cinema.8fLqrg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/cinema.8fLqrg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/currencyexchanger.vsmasQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/currencyexchanger.vsmasQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/servertanks.Zkvo0w.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/servertanks.Zkvo0w.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/1.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/profile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/logo/avatar.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/default/logo/avatar.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/avatar.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,11 +76,11 @@
       <recent name="C:\Users\pc\Desktop\FWA\ex02\Cinema\src\main\webapp\WEB-INF\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/images/default/logo" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/images/default" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/logo" />
       <recent name="C:\Users\pc\Desktop\FWA\ex02\Cinema\src\main\webapp\WEB-INF\jsp" />
-      <recent name="C:\Users\pc\Desktop\FWA\ex02\Cinema\src\main\webapp\WEB-INF\css" />
-      <recent name="C:\Users\pc\Desktop\FWA\ex00\Cinema\src\main" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.83">
@@ -224,7 +210,7 @@
       <workItem from="1671789457578" duration="141000" />
       <workItem from="1671789606849" duration="4000" />
       <workItem from="1671789639964" duration="1332000" />
-      <workItem from="1671799566131" duration="579000" />
+      <workItem from="1671799566131" duration="1096000" />
     </task>
     <task id="LOCAL-00001" summary="Начал разработку.">
       <created>1671218976005</created>
