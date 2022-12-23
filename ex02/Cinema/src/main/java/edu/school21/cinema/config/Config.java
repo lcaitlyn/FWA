@@ -1,6 +1,7 @@
 package edu.school21.cinema.config;
 
 import com.zaxxer.hikari.HikariDataSource;
+import edu.school21.cinema.repositories.LogsRepository;
 import edu.school21.cinema.repositories.UsersRepository;
 import edu.school21.cinema.services.UsersServiceImpl;
 import org.springframework.beans.factory.annotation.Value;
@@ -43,6 +44,11 @@ public class Config {
     @Bean
     public UsersRepository usersRepository() {
         return new UsersRepository(hikariDataSource());
+    }
+
+    @Bean
+    public LogsRepository logsRepository() {
+        return new LogsRepository(hikariDataSource());
     }
 
     @Bean

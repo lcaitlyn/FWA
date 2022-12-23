@@ -33,8 +33,7 @@ public class UsersRepository implements CrudRepository<User> {
     @Override
     public List<User> findAll() {
         String query = "SELECT * FROM cinema.users";
-        List<User> list = jdbcTemplate.query(query, new BeanPropertyRowMapper<>(User.class));
-        return list.isEmpty() ? null : list;
+        return jdbcTemplate.query(query, new BeanPropertyRowMapper<>(User.class));
     }
 
     @Override

@@ -20,29 +20,6 @@ body {
     z-index: 2;
 }
 
-/*.form-signin #inputFirstName {*/
-/*    margin-bottom: -1px;*/
-/*    border-bottom-right-radius: 0;*/
-/*    border-bottom-left-radius: 0;*/
-/*}*/
-
-/*.form-signin #inputSecondName {*/
-/*    margin-bottom: -1px;*/
-/*    border-radius: 0;*/
-/*}*/
-
-/*.form-signin input[type="email"] {*/
-/*    margin-top: -1px;*/
-/*    margin-bottom: -1px;*/
-/*    border-radius: 0;*/
-/*}*/
-
-/*.form-signin input[type="password"] {*/
-/*    margin-bottom: 10px;*/
-/*    border-top-left-radius: 0;*/
-/*    border-top-right-radius: 0;*/
-/*}*/
-
 .form-signin .form-floating input {
     border-radius: 0;
 }

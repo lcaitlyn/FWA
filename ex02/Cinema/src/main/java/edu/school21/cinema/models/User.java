@@ -1,5 +1,6 @@
 package edu.school21.cinema.models;
 
+import edu.school21.cinema.repositories.LogsRepository;
 import lombok.*;
 
 @Setter
