@@ -1,11 +1,13 @@
 <%@ page import="edu.school21.cinema.models.User" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <style>
         <%@include file="/WEB-INF/css/bootstrap.min.css"%>
@@ -17,8 +19,8 @@
 <body>
 <div class="container">
     <div class="container__photo">
-        <% String logo = "/Users/lcaitlyn/Desktop/FWA/ex02/Cinema/src/main/webapp/WEB-INF/logo/avatar.jpeg"; %>
-        <img src="<%=logo%>>" alt="noname">
+<%--        <% String logo = "/Users/lcaitlyn/Desktop/FWA/ex02/Cinema/src/main/webapp/WEB-INF/logo/avatar.jpeg"; %>--%>
+        <img src="<c:url value='/images/avatar.jpeg'/>" alt="noname">
         <!--  here style bootstrap class - @btn@-->
         <form method="POST">
             <input  class="form-control form-control-sm" type="file" name="" id="" pa>
