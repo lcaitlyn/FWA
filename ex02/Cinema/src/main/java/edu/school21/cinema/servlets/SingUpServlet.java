@@ -3,29 +3,22 @@ package edu.school21.cinema.servlets;
 import edu.school21.cinema.repositories.UsersRepository;
 import edu.school21.cinema.services.UsersService;
 import edu.school21.cinema.utils.Utils;
-import org.springframework.context.ApplicationContext;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.stream.Collectors;
 
 @MultipartConfig
 @WebServlet(name = "SingUpServlet", value = "/signUp")
 public class SingUpServlet extends HttpServlet {
-    private ApplicationContext applicationContext;
     private UsersService usersService;
     private UsersRepository usersRepository;
 
     @Override
     public void init(ServletConfig config) throws ServletException {
-        applicationContext = (ApplicationContext) config.getServletContext().getAttribute("applicationContext");
-        usersService = (UsersService) applicationContext.getBean("usersService");
-        usersRepository = (UsersRepository) applicationContext.getBean("usersRepository");
+        usersService = (UsersService) config.getServletContext().getAttribute("usersService");
+        usersRepository = (UsersRepository) config.getServletContext().getAttribute("usersRepository");
     }
 
     @Override
@@ -52,6 +45,6 @@ public class SingUpServlet extends HttpServlet {
 
         usersService.signUp(firstName, secondName, email, password);
 
-        response.sendRedirect("/signIn");
+        response.sendRedirect(request.getContextPath() + "/signIn");
     }
 }

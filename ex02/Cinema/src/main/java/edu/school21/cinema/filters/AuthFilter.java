@@ -24,7 +24,7 @@ public class AuthFilter implements Filter {
         }
 
         if (req.getSession().getAttribute("authorized").equals(true)) {
-            resp.sendRedirect("/profile");
+            resp.sendRedirect(req.getContextPath() + "/profile");
             return;
         }
 

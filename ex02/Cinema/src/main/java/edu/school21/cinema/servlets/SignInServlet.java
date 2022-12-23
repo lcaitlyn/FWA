@@ -1,32 +1,31 @@
 package edu.school21.cinema.servlets;
 
+import edu.school21.cinema.models.Log;
 import edu.school21.cinema.models.User;
+import edu.school21.cinema.repositories.LogsRepository;
 import edu.school21.cinema.repositories.UsersRepository;
 import edu.school21.cinema.services.UsersService;
 import edu.school21.cinema.utils.Utils;
-import org.springframework.context.ApplicationContext;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.stream.Collectors;
+import java.time.LocalDateTime;
 
 @MultipartConfig
 @WebServlet(name = "SignInServlet", value = "/signIn")
 public class SignInServlet extends HttpServlet {
-    private ApplicationContext applicationContext;
     private UsersService usersService;
     private UsersRepository usersRepository;
 
+    private LogsRepository logsRepository;
+
     @Override
     public void init(ServletConfig config) throws ServletException {
-        applicationContext = (ApplicationContext) config.getServletContext().getAttribute("applicationContext");
-        usersService = (UsersService) applicationContext.getBean("usersService");
-        usersRepository = (UsersRepository) applicationContext.getBean("usersRepository");
+        usersService = (UsersService) config.getServletContext().getAttribute("usersService");
+        usersRepository = (UsersRepository) config.getServletContext().getAttribute("usersRepository");
+        logsRepository = (LogsRepository) config.getServletContext().getAttribute("logsRepository");
     }
 
     @Override
@@ -49,9 +48,21 @@ public class SignInServlet extends HttpServlet {
             return;
         }
 
-        request.getSession().setAttribute("authorized", true);
-        request.getSession().setAttribute("user", usersRepository.findByEmail(email).get());
+        authorization(request);
 
-        response.sendRedirect("/profile");
+
+        response.sendRedirect(request.getContextPath() + "/profile");
+    }
+
+    public void authorization(HttpServletRequest request) {
+        User user = usersRepository.findByEmail(request.getParameter("email")).get();
+
+        request.getSession().setAttribute("authorized", true);
+
+        request.getSession().setAttribute("user", user);
+
+        logsRepository.save(new Log(user.getEmail(), LocalDateTime.now(), request.getRemoteAddr()));
+
+        request.getSession().setAttribute("logsRepository", logsRepository);
     }
 }

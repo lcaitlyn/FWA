@@ -17,7 +17,15 @@ public class Listener implements ServletContextListener, HttpSessionListener, Ht
     @Override
     public void contextInitialized(ServletContextEvent sce) {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(Config.class);
+
         ServletContext servletContext = sce.getServletContext();
+
         servletContext.setAttribute("applicationContext", applicationContext);
+
+        servletContext.setAttribute("usersService", applicationContext.getBean("usersService"));
+
+        servletContext.setAttribute("usersRepository", applicationContext.getBean("usersRepository"));
+
+        servletContext.setAttribute("logsRepository", applicationContext.getBean("logsRepository"));
     }
 }

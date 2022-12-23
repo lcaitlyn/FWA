@@ -9,17 +9,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61e16daf-0d38-4ced-a3b9-f8a05cc073f0" name="Changes" comment="Делаю ex02">
+    <list default="true" id="61e16daf-0d38-4ced-a3b9-f8a05cc073f0" name="Changes" comment="Доделал работу с отображением аватарки. Делаю загрузку новой аватарки.">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/company.fTynOA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/filters/ImageFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/ImageServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Cinema_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Cinema_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/lcaitlyn.7O-L8w.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/lcaitlyn.7O-L8w/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/lcaitlyn.7O-L8w/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/lcaitlyn.7O-L8w/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/lcaitlyn.7O-L8w/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/lcaitlyn.7O-L8w/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/chat.WJMuAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/chat.WJMuAA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/cinema.8fLqrg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/cinema.8fLqrg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/currencyexchanger.vsmasQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/currencyexchanger.vsmasQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/servertanks.Zkvo0w.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat_8_5_83.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat_8_5_83.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_12_2022_17_38__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_12_2022_17_38__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/filters/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/filters/AuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/listeners/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/listeners/Listener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/models/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/models/Log.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/repositories/LogsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/repositories/LogsRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/repositories/UsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/repositories/UsersRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/services/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/services/UsersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/services/UsersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/services/UsersServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/ProfileServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/ProfileServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/SignInServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/SignInServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/SingUpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/SingUpServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/data.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/sign_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/sign_style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/profile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/signUp.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/default/logo/avatar.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/default/avatar/avatar.jpeg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +77,14 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2IxjqC49C3pPhBmcHf55djBM0Ub" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -221,6 +260,7 @@
       <workItem from="1671803457769" duration="170000" />
       <workItem from="1671803630828" duration="30000" />
       <workItem from="1671803685842" duration="2908000" />
+      <workItem from="1671816221864" duration="6167000" />
     </task>
     <task id="LOCAL-00001" summary="Начал разработку.">
       <created>1671218976005</created>
@@ -279,20 +319,16 @@
     <MESSAGE value="Доделал ex00" />
     <MESSAGE value="Доделал ex01" />
     <MESSAGE value="Делаю ex02" />
-    <option name="LAST_COMMIT_MESSAGE" value="Делаю ex02" />
+    <MESSAGE value="Доделал работу с отображением аватарки. Делаю загрузку новой аватарки." />
+    <option name="LAST_COMMIT_MESSAGE" value="Доделал работу с отображением аватарки. Делаю загрузку новой аватарки." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/school21/cinema/filters/AuthFilter.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/school21/cinema/filters/EncodingFilter.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/ImageServlet.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -5,8 +5,6 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.sql.DataSource;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 public class LogsRepository {

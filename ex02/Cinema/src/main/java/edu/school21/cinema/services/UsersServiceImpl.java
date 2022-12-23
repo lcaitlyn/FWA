@@ -1,6 +1,7 @@
 package edu.school21.cinema.services;
 
 import edu.school21.cinema.models.User;
+import edu.school21.cinema.repositories.LogsRepository;
 import edu.school21.cinema.repositories.UsersRepository;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;

@@ -23,9 +23,9 @@
 <body>
 <div class="container">
     <div class="container__photo">
-        <img src="<c:url value='/images/default/logo/avatar.jpeg'/>" alt="noname">
-        <form method="POST">
-            <input  class="form-control form-control-sm" type="file" name="" id="" pa>
+        <img src="<c:url value='/images/default/avatar/avatar.jpeg'/>" alt="noname">
+        <form method="POST" action="/images">
+            <input  class="form-control form-control-sm" type="file" name="avatar">
             <button class="btn btn-outline-primary" type="button">Upload</button>
         </form>
     </div>
@@ -40,7 +40,7 @@
         </div>
 
         <table class="container__login-table table table-bordered">
-            <% LogsRepository logsRepository = (LogsRepository) request.getAttribute("logsRepository"); %>
+            <% LogsRepository logsRepository = (LogsRepository) config.getServletContext().getAttribute("logsRepository"); %>
             <tr>
                 <th>Date</th>
                 <th>Time</th>
@@ -50,29 +50,13 @@
                 for (Log log : logsRepository.findAll(user.getEmail())) {
                     out.println("<tr>");
 
-                    out.println("<td> " + log.getDate().toLocalDate() + "</td>");
-                    out.println("<td> " + log.getDate().toLocalTime() + "</td>");
+                    out.println("<td> " + log.getDate().format(DateTimeFormatter.ofPattern("MMMM dd, yyyy")) + "</td>");
+                    out.println("<td> " + log.getDate().format(DateTimeFormatter.ofPattern("hh:mm")) + "</td>");
                     out.println("<td> " + log.getIp() + "</td>");
 
                     out.println("</tr>");
                 }
             %>
-
-<%--            <tr>--%>
-<%--                <td>December 10, 2020</td>--%>
-<%--                <td>05:00</td>--%>
-<%--                <td>127.0.01</td>--%>
-<%--            </tr>--%>
-<%--            <tr>--%>
-<%--                <td>December 10, 2020</td>--%>
-<%--                <td>05:00</td>--%>
-<%--                <td>127.0.01</td>--%>
-<%--            </tr>--%>
-<%--            <tr>--%>
-<%--                <td>December 10, 2020</td>--%>
-<%--                <td>05:00</td>--%>
-<%--                <td>127.0.01</td>--%>
-<%--            </tr>--%>
         </table>
     </div>
 

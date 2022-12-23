@@ -20,14 +20,14 @@ public class UsersRepository implements CrudRepository<User> {
     @Override
     public Optional<User> findById(Long id) {
         String query = "SELECT * FROM cinema.users WHERE id=" + id;
-        return Optional.ofNullable(jdbcTemplate.query(query, new BeanPropertyRowMapper<>(User.class))
-                .stream().findAny().orElse(null));
+        return jdbcTemplate.query(query, new BeanPropertyRowMapper<>(User.class))
+                .stream().findAny();
     }
 
     public Optional<User> findByEmail(String email) {
         String query = "SELECT * FROM cinema.users WHERE email='" + email + "'";
-        return Optional.ofNullable(jdbcTemplate.query(query, new BeanPropertyRowMapper<>(User.class))
-                .stream().findAny().orElse(null));
+        return jdbcTemplate.query(query, new BeanPropertyRowMapper<>(User.class))
+                .stream().findAny();
     }
 
     @Override
@@ -44,8 +44,8 @@ public class UsersRepository implements CrudRepository<User> {
 
     @Override
     public void update(User entity) {
-        String query = "UPDATE cinema.users SET firstname=?, secondname=?, email=?, password=?";
-        jdbcTemplate.update(query, entity.getFirstName(), entity.getSecondName(), entity.getEmail(), entity.getPassword());
+        String query = "UPDATE cinema.users SET firstname=?, secondname=?, email=?, password=? WHERE id=?";
+        jdbcTemplate.update(query, entity.getFirstName(), entity.getSecondName(), entity.getEmail(), entity.getPassword(), entity.getId());
     }
 
     @Override

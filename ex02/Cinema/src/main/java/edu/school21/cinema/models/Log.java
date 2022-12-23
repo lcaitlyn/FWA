@@ -2,8 +2,6 @@ package edu.school21.cinema.models;
 
 import lombok.*;
 
-import java.sql.Time;
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 @Getter
