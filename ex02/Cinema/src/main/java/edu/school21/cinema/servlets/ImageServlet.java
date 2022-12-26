@@ -1,5 +1,6 @@
 package edu.school21.cinema.servlets;
 
+import edu.school21.cinema.models.Image;
 import edu.school21.cinema.models.User;
 import edu.school21.cinema.services.ImageService;
 import org.apache.commons.fileupload.FileItem;
@@ -37,7 +38,6 @@ public class ImageServlet extends HttpServlet {
                     response.sendError(HttpServletResponse.SC_BAD_REQUEST, "только изображения!");
                     return;
                 }
-
                 imageService.save(request, fileItem);
             }
         } catch (Exception e) {
@@ -57,14 +57,14 @@ public class ImageServlet extends HttpServlet {
 
         Long imageId = Utils.getImageIdFromPathInfo(request.getPathInfo());
 
-        Optional<File> file = imageService.findById(imageId);
+        Optional<Image> image = imageService.findById(imageId);
 
-        if (!file.isPresent()) {
+        if (!image.isPresent()) {
             response.sendError(HttpServletResponse.SC_NOT_FOUND, "Такого изображения не существует");
             return;
         }
 
-        request.setAttribute("file", file.get());
+        request.setAttribute("fileUniquePath", image.get().getFileUniquePath());
         request.getRequestDispatcher("/WEB-INF/jsp/image.jsp").forward(request, response);
     }
 }

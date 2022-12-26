@@ -16,8 +16,8 @@ public class ImageRepository {
     }
 
     public void save(Image entity) {
-        final String query = "INSERT INTO cinema.images (userid, name, mime) VALUES (?, ?, ?)";
-        jdbcTemplate.update(query, entity.getUserID(), entity.getName(), entity.getMIME());
+        final String query = "INSERT INTO cinema.images (userid, name, mime, size) VALUES (?, ?, ?, ?)";
+        jdbcTemplate.update(query, entity.getUserID(), entity.getName(), entity.getMIME(), entity.getSize());
     }
 
     public Optional<Image> findByID(Long id) {

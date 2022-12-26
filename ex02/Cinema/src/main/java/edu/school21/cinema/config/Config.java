@@ -69,11 +69,11 @@ public class Config {
 
     @Bean
     public ImageService imageService() {
-        return new ImageServiceImpl(imageRepository(), storagePath);
+        return new ImageServiceImpl(imageRepository());
     }
 
     @Bean(value = "storagePath")
     public String getStoragePath() {
-        return storagePath;
+        return (!storagePath.startsWith("/")) ? "/" + storagePath : storagePath;
     }
 }

@@ -4,6 +4,7 @@ import edu.school21.cinema.models.Image;
 import edu.school21.cinema.models.User;
 import edu.school21.cinema.repositories.ImageRepository;
 import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.disk.DiskFileItem;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.*;
@@ -13,19 +14,9 @@ import java.util.Properties;
 
 public class ImageServiceImpl implements ImageService {
     private final ImageRepository imageRepository;
-    private final String storagePath;
-    private String catalinaHome;
-    private String contextPath;
 
-    @Deprecated
-    public ImageServiceImpl(ImageRepository imageRepository, String storagePath) {
+    public ImageServiceImpl(ImageRepository imageRepository) {
         this.imageRepository = imageRepository;
-        this.storagePath = storagePath;
-    }
-
-    public void setPaths(String catalinaHome, String contextPath) {
-        this.catalinaHome = catalinaHome;
-        this.contextPath = contextPath;
     }
 
     @Override
@@ -40,30 +31,21 @@ public class ImageServiceImpl implements ImageService {
             String cloudPath = Utils.getCloudPath(request, image.get());
 
             Utils.uploadToCloud(cloudPath, fileItem);
-
-            System.out.println(cloudPath);
         }
     }
 
     @Override
-    public Optional<File> findLastImage() {
-        return Optional.empty();
+    public Optional<Image> findLastImage(Long userId) {
+        return imageRepository.findLastByUserID(userId);
     }
 
     @Override
-    public Optional<File> findById(Long id) {
-        Optional<Image> image = imageRepository.findByID(id);
-
-//        if (image.isPresent()) {
-//            String cloudPath = Utils.getCloudPath(storagePath, image.get());
-//            return Optional.of(new File(cloudPath));
-//        }
-
-        return Optional.empty();
+    public Optional<Image> findById(Long userId) {
+        return imageRepository.findByID(userId);
     }
 
     @Override
-    public List<File> findAll() {
-        return null;
+    public List<Image> findAll(Long userId) {
+        return imageRepository.findAllByUserID(userId);
     }
 }

@@ -1,5 +1,6 @@
 package edu.school21.cinema.services;
 
+import edu.school21.cinema.models.Image;
 import edu.school21.cinema.models.User;
 import org.apache.commons.fileupload.FileItem;
 
@@ -10,7 +11,8 @@ import java.util.Optional;
 
 public interface ImageService {
     void save(HttpServletRequest request, FileItem fileItem);
-    Optional<File> findLastImage();
-    Optional<File> findById(Long id);
-    List<File> findAll();
+    Optional<Image> findLastImage(Long userId);
+    Optional<Image> findById(Long userId);
+
+    List<Image> findAll(Long userId);
 }

@@ -3,6 +3,10 @@
 <%@ page import="edu.school21.cinema.models.Log" %>
 <%@ page import="java.time.format.DateTimeFormatter" %>
 <%@ page import="java.time.format.FormatStyle" %>
+<%@ page import="edu.school21.cinema.services.ImageService" %>
+<%@ page import="java.util.Optional" %>
+<%@ page import="edu.school21.cinema.models.Image" %>
+<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 
@@ -23,7 +27,10 @@
 <body>
 <div class="container">
     <div class="container__photo">
-        <img src="<c:url value='/images/default/avatar/avatar.png'/>" alt="noname">
+
+        <% User user = (User) request.getSession().getAttribute("user"); %>
+
+        <img src="<c:url value='${avatar}'/>" alt="noname">
         <form method="POST" action="<%= request.getContextPath() %>/image" enctype="multipart/form-data">
             <input  class="form-control form-control-sm" type="file" accept="image/*" name="image">
             <button class="btn btn-outline-primary" type="submit">Upload</button>
@@ -33,20 +40,19 @@
     <div class="container__right-side">
         <div class="container__text">
 
-            <%  User user = (User) request.getSession().getAttribute("user"); %>
-
             <p class="container__name"><%= user.getFirstName() + " " + user.getSecondName() %></p>
             <p class="container__email"><%= user.getEmail()%></p>
         </div>
 
         <table class="container__login-table table table-bordered">
-            <% LogsRepository logsRepository = (LogsRepository) config.getServletContext().getAttribute("logsRepository"); %>
             <tr>
                 <th>Date</th>
                 <th>Time</th>
                 <th>IP</th>
             </tr>
             <%
+                LogsRepository logsRepository = (LogsRepository) config.getServletContext().getAttribute("logsRepository");
+
                 for (Log log : logsRepository.findAll(user.getEmail())) {
                     out.println("<tr>");
 
@@ -66,16 +72,20 @@
             <th>Size</th>
             <th>MIME</th>
         </tr>
-        <tr>
-            <td>avatar.jpg</td>
-            <td>196KB</td>
-            <td>image/jpg</td>
-        </tr>
-        <tr>
-            <td>image.png</td>
-            <td>1MB</td>
-            <td>image/png</td>
-        </tr>
+        <%
+            List<Image> images = (List<Image>) request.getAttribute("images");
+
+            for (Image image : images) {
+                out.println("<tr>");
+
+                String path = request.getContextPath() + "/image/imageid=" + image.getId();
+                out.println("<td><a href=\"" + path + "\">" + image.getName() + "</td>");
+                out.println("<td>" + image.getSize() + "</td>");
+                out.println("<td>" + image.getMIME() + "</td>");
+
+                out.println("</tr>");
+            }
+        %>
     </table>
 </div>
 </body>

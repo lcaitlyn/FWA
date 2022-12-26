@@ -7,7 +7,6 @@
     <title>Image</title>
 </head>
 <body>
-    <% File file = (File) request.getAttribute("file"); %>
-    <img src="<c:url value='/images/users/<%= file.toPath() %>>'/>" alt="not found">
+    <img src="<c:url value='${storagePath}${fileUniquePath}'/>" alt="not found">
 </body>
 </html>

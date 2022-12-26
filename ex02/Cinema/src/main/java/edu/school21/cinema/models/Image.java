@@ -9,17 +9,41 @@ import org.apache.commons.fileupload.FileItem;
 @NoArgsConstructor
 @RequiredArgsConstructor
 public class Image {
-    private Long ID;
+    private Long id;
     @NonNull
-    private Long UserID;
+    private Long userID;
     @NonNull
-    private String Name;
+    private String name;
     @NonNull
     private String MIME;
+    @NonNull
+    private String size;
 
     public Image(User user, FileItem fileItem) {
-        UserID = user.getId();
-        Name = fileItem.getName();
+        userID = user.getId();
+        name = fileItem.getName();
         MIME = fileItem.getContentType();
+        size = getReadableSize(fileItem.getSize());
+    }
+
+    public String getFileUniquePath() {
+        return "/" + getUserID() + "/userid=" + getUserID() + "imageid=" + getId() + "name=" + getName();
+    }
+
+    // немного неверно рассчитывает
+    @Deprecated
+    private String getReadableSize(Long size) {
+        String [] measures = {"B", "KB", "MB", "GB"};
+
+        int i = 0;
+        long tmp = size;
+        while (tmp / 1024 >= 1) {
+            i++;
+            tmp /= 1024;
+        }
+
+        tmp = tmp + tmp % 1024;
+
+        return tmp + measures[i];
     }
 }
