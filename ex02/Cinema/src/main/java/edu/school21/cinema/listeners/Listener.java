@@ -20,12 +20,12 @@ public class Listener implements ServletContextListener, HttpSessionListener, Ht
 
         ServletContext servletContext = sce.getServletContext();
 
+        servletContext.setAttribute("webappPath", System.getProperty("catalina.home") + "/webapps");
+        servletContext.setAttribute("storagePath", applicationContext.getBean("storagePath"));
         servletContext.setAttribute("applicationContext", applicationContext);
-
         servletContext.setAttribute("usersService", applicationContext.getBean("usersService"));
-
         servletContext.setAttribute("usersRepository", applicationContext.getBean("usersRepository"));
-
         servletContext.setAttribute("logsRepository", applicationContext.getBean("logsRepository"));
+        servletContext.setAttribute("imageService", applicationContext.getBean("imageService"));
     }
 }

@@ -1,8 +1,12 @@
 package edu.school21.cinema.config;
 
 import com.zaxxer.hikari.HikariDataSource;
+import edu.school21.cinema.repositories.ImageRepository;
 import edu.school21.cinema.repositories.LogsRepository;
 import edu.school21.cinema.repositories.UsersRepository;
+import edu.school21.cinema.services.ImageService;
+import edu.school21.cinema.services.ImageServiceImpl;
+import edu.school21.cinema.services.UsersService;
 import edu.school21.cinema.services.UsersServiceImpl;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -23,6 +27,8 @@ public class Config {
     private String password;
     @Value("${db.driver.name}")
     private String driver;
+    @Value("${storage.path}")
+    private String storagePath;
 
     @Bean
     public HikariDataSource hikariDataSource() {
@@ -52,7 +58,22 @@ public class Config {
     }
 
     @Bean
-    public UsersServiceImpl usersService() {
+    public UsersService usersService() {
         return new UsersServiceImpl(usersRepository(), bCryptPasswordEncoder());
+    }
+
+    @Bean
+    public ImageRepository imageRepository() {
+        return new ImageRepository(hikariDataSource());
+    }
+
+    @Bean
+    public ImageService imageService() {
+        return new ImageServiceImpl(imageRepository(), storagePath);
+    }
+
+    @Bean(value = "storagePath")
+    public String getStoragePath() {
+        return storagePath;
     }
 }

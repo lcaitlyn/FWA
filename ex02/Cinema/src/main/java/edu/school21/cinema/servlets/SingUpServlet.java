@@ -2,7 +2,6 @@ package edu.school21.cinema.servlets;
 
 import edu.school21.cinema.repositories.UsersRepository;
 import edu.school21.cinema.services.UsersService;
-import edu.school21.cinema.utils.Utils;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

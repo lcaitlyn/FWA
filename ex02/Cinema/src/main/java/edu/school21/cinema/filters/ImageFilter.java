@@ -6,9 +6,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebFilter(filterName = "ImageFilter", value = "/image")
+@WebFilter(filterName = "ImageFilter", value = "/image/*")
 public class ImageFilter implements Filter {
     public void init(FilterConfig config) throws ServletException {
+
     }
 
     public void destroy() {

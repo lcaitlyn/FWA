@@ -23,10 +23,10 @@
 <body>
 <div class="container">
     <div class="container__photo">
-        <img src="<c:url value='/images/default/avatar/avatar.jpeg'/>" alt="noname">
-        <form method="POST" action="/images">
-            <input  class="form-control form-control-sm" type="file" name="avatar">
-            <button class="btn btn-outline-primary" type="button">Upload</button>
+        <img src="<c:url value='/images/default/avatar/avatar.png'/>" alt="noname">
+        <form method="POST" action="<%= request.getContextPath() %>/image" enctype="multipart/form-data">
+            <input  class="form-control form-control-sm" type="file" accept="image/*" name="image">
+            <button class="btn btn-outline-primary" type="submit">Upload</button>
         </form>
     </div>
 
@@ -51,7 +51,7 @@
                     out.println("<tr>");
 
                     out.println("<td> " + log.getDate().format(DateTimeFormatter.ofPattern("MMMM dd, yyyy")) + "</td>");
-                    out.println("<td> " + log.getDate().format(DateTimeFormatter.ofPattern("hh:mm")) + "</td>");
+                    out.println("<td> " + log.getDate().format(DateTimeFormatter.ofPattern("HH:mm")) + "</td>");
                     out.println("<td> " + log.getIp() + "</td>");
 
                     out.println("</tr>");
@@ -59,7 +59,6 @@
             %>
         </table>
     </div>
-
 
     <table class="uploaded_photo table table-bordered">
         <tr>

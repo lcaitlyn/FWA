@@ -5,7 +5,6 @@ import edu.school21.cinema.models.User;
 import edu.school21.cinema.repositories.LogsRepository;
 import edu.school21.cinema.repositories.UsersRepository;
 import edu.school21.cinema.services.UsersService;
-import edu.school21.cinema.utils.Utils;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
