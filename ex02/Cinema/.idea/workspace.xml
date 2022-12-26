@@ -9,11 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61e16daf-0d38-4ced-a3b9-f8a05cc073f0" name="Changes" comment="Доделал. Нужно конечно сделать мелкие поправки.">
+    <list default="true" id="61e16daf-0d38-4ced-a3b9-f8a05cc073f0" name="Changes" comment="Исправил NPE c User">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/chat.WJMuAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/chat.WJMuAA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/cinema.8fLqrg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/cinema.8fLqrg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/currencyexchanger.vsmasQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/currencyexchanger.vsmasQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/filters/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/filters/AuthFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/listeners/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/listeners/Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/ProfileServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/ProfileServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FWA_ex00.postman_collection.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,25 +62,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/lcaitlyn/Desktop/FWA/ex02/Cinema/src/main/webapp/images&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;2d365e421520ea39d539527b81cd069e&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/lcaitlyn/Desktop/FWA/ex02/Cinema/src/main/webapp/images",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "2d365e421520ea39d539527b81cd069e"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/images" />
@@ -235,7 +241,7 @@
       <workItem from="1672050830565" duration="180000" />
       <workItem from="1672051027546" duration="219000" />
       <workItem from="1672051283603" duration="8241000" />
-      <workItem from="1672063123849" duration="4715000" />
+      <workItem from="1672063123849" duration="5183000" />
     </task>
     <task id="LOCAL-00001" summary="Начал разработку.">
       <created>1671218976005</created>
@@ -279,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672066983498</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Исправил NPE c User">
+      <created>1672068184798</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672068184798</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,6 +316,7 @@
     <MESSAGE value="Делаю ex02" />
     <MESSAGE value="Доделал работу с отображением аватарки. Делаю загрузку новой аватарки." />
     <MESSAGE value="Доделал. Нужно конечно сделать мелкие поправки." />
-    <option name="LAST_COMMIT_MESSAGE" value="Доделал. Нужно конечно сделать мелкие поправки." />
+    <MESSAGE value="Исправил NPE c User" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправил NPE c User" />
   </component>
 </project>
