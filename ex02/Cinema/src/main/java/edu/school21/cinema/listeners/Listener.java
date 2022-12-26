@@ -28,4 +28,10 @@ public class Listener implements ServletContextListener, HttpSessionListener, Ht
         servletContext.setAttribute("logsRepository", applicationContext.getBean("logsRepository"));
         servletContext.setAttribute("imageService", applicationContext.getBean("imageService"));
     }
+
+    @Override
+    public void contextDestroyed(ServletContextEvent sce) {
+        ServletContext servletContext = sce.getServletContext();
+        ServletContextListener.super.contextDestroyed(sce);
+    }
 }

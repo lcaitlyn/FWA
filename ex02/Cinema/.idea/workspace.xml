@@ -9,29 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61e16daf-0d38-4ced-a3b9-f8a05cc073f0" name="Changes" comment="Доделал работу с отображением аватарки. Делаю загрузку новой аватарки.">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/chat.WJMuAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/chat.WJMuAA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/cinema.8fLqrg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/cinema.8fLqrg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/currencyexchanger.vsmasQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/currencyexchanger.vsmasQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f6277b2-8ec5-4114-8eeb-4d1b5178f1d5/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat_8_5_83.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat_8_5_83.xml" afterDir="false" />
+    <list default="true" id="61e16daf-0d38-4ced-a3b9-f8a05cc073f0" name="Changes" comment="Доделал. Нужно конечно сделать мелкие поправки.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/config/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/models/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/models/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/repositories/ImageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/repositories/ImageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/services/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/services/ImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/services/ImageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/services/ImageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/services/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/services/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/ImageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/ImageServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/filters/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/filters/AuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/listeners/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/listeners/Listener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/ProfileServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/ProfileServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/school21/cinema/servlets/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/image.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/image.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/profile.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +90,7 @@
       <recent name="C:\Users\pc\Desktop\FWA\ex02\Cinema\src\main\webapp\WEB-INF\jsp" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Program">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.83">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.school21.cinema.Program" />
       <module name="Cinema" />
@@ -253,7 +235,7 @@
       <workItem from="1672050830565" duration="180000" />
       <workItem from="1672051027546" duration="219000" />
       <workItem from="1672051283603" duration="8241000" />
-      <workItem from="1672063123849" duration="3439000" />
+      <workItem from="1672063123849" duration="4715000" />
     </task>
     <task id="LOCAL-00001" summary="Начал разработку.">
       <created>1671218976005</created>
@@ -290,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671640599775</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Доделал. Нужно конечно сделать мелкие поправки.">
+      <created>1672066983497</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672066983498</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,6 +302,7 @@
     <MESSAGE value="Доделал ex01" />
     <MESSAGE value="Делаю ex02" />
     <MESSAGE value="Доделал работу с отображением аватарки. Делаю загрузку новой аватарки." />
-    <option name="LAST_COMMIT_MESSAGE" value="Доделал работу с отображением аватарки. Делаю загрузку новой аватарки." />
+    <MESSAGE value="Доделал. Нужно конечно сделать мелкие поправки." />
+    <option name="LAST_COMMIT_MESSAGE" value="Доделал. Нужно конечно сделать мелкие поправки." />
   </component>
 </project>

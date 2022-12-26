@@ -1,5 +1,7 @@
 package edu.school21.cinema.filters;
 
+import edu.school21.cinema.models.User;
+
 import javax.servlet.*;
 import javax.servlet.annotation.*;
 import javax.servlet.http.HttpServletRequest;
@@ -23,7 +25,8 @@ public class AuthFilter implements Filter {
             req.getSession().setAttribute("authorized", false);
         }
 
-        if (req.getSession().getAttribute("authorized").equals(true)) {
+        if (req.getSession().getAttribute("authorized").equals(true)
+                && req.getSession().getAttribute("user") != null) {
             resp.sendRedirect(req.getContextPath() + "/profile");
             return;
         }

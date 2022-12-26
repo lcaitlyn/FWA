@@ -20,6 +20,12 @@ public class ProfileServlet extends HttpServlet {
             return;
         }
 
+        if (request.getSession().getAttribute("user") == null) {
+            request.getSession().setAttribute("authorized", false);
+            response.sendRedirect(request.getContextPath() + "/signIn");
+            return;
+        }
+
         Utils.generateImages(request);
 
         request.getRequestDispatcher("/WEB-INF/jsp/profile.jsp").forward(request, response);
